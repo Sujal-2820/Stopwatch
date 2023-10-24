@@ -1,0 +1,158 @@
+body{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    z-index: -1;
+}
+
+h1{
+    color: darkblue;
+}
+h2{
+    color: black;
+}
+.heading{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+.main-Head{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 222, 222);
+    align-items: center;
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+}
+.main-Head > h1{
+    color: orangered;
+}
+
+.container{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    background: linear-gradient(to right, #00ff3c, #fff200);
+    justify-content: center;
+    align-items: center;
+}
+
+.container .time{
+    position: relative;
+    width: calc(100px - 30px);
+    height: calc(100px - 30px);
+    background: rgb(255, 255, 255);
+    float: left;
+    justify-content: center; 
+    left: 469px;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+    border: 1px solid black;
+}
+
+.colon {
+    position: relative;
+    width: 30px;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    float: left;
+    left: 469px;
+    top: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid black
+}
+
+
+.controls{
+    position: relative;
+    float: left;
+    left: 420px;
+    font-size: 25px;
+    bottom: 10px;
+}
+
+.control-buttons{
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+#start:hover{
+    background-color: rgb(106, 4, 195);
+    color: aliceblue;
+}
+#pause:hover{
+    background-color: rgb(228, 4, 4);
+    color: aliceblue;
+}
+
+#lap:hover{
+    background-color: rgb(116, 5, 200);
+    color: aliceblue;
+}
+
+#reset:hover{
+    background-color: rgb(222, 135, 5);
+    color: aliceblue;
+}
+
+#clear:hover{
+    background-color: rgb(5, 5, 225);
+    color: aliceblue;
+}
+
+
+.control-buttons:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#mainContent{
+    position: absolute;
+    top: 400px;
+    left: 565px;
+}
+
+.LapInfo{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #4765e0, #d23030); 
+    font-size: 30px;  
+    display: block;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lapNum{
+    float: left;
+    width: 65px;
+}
+.lap-NumVal{
+    float: left;
+}
+
+.lapTime{
+    float: right;
+    padding-top: 4px;
+    padding-left: 115px;
+}
