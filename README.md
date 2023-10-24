@@ -33,13 +33,13 @@
 
 <br>
 
-> **`1`** Visit **<code><a href="https://github.com/Sujal-2820/Hacktoberfest-Web/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a></code>**
+> **`1`** Visit **<code><a href="https://github.com/Sujal-2820/Stopwatch/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a></code>**
 
-> **`2`** Create **<code><a href="https://github.com/Sujal-2820/Hacktoberfest-Web/issues">Issues</a></code>**
+> **`2`** Create **<code><a href="https://github.com/Sujal-2820/Stopwatch/issues">Issues</a></code>**
 
-> **`3`** Create **<code><a href="https://github.com/Sujal-2820/Hacktoberfest-Web/pulls">Pull Request</a></code>**
+> **`3`** Create **<code><a href="https://github.com/Sujal-2820/Stopwatch/pulls">Pull Request</a></code>**
 
-> **`4`** Star The **<code><a href="https://github.com/Sujal-2820/Hacktoberfest-Web">Repository</a></code>**
+> **`4`** Star The **<code><a href="https://github.com/Sujal-2820/Stopwatch">Repository</a></code>**
 
 <br>
 
@@ -52,7 +52,7 @@
  
  > **`2`** CSS
  
- > **`3`** GitHub
+ > **`3`** JavaScript
  
 
 
