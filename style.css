@@ -83,7 +83,7 @@ h2{
 .controls{
     position: relative;
     float: left;
-    left: 420px;
+    left: 32%;
     font-size: 25px;
     bottom: 10px;
 }
@@ -91,30 +91,33 @@ h2{
 .control-buttons{
     border: 2px solid blue;
     border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.control-buttons:hover{
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    color: aliceblue;
 }
 
 #start:hover{
     background-color: rgb(106, 4, 195);
-    color: aliceblue;
 }
 #pause:hover{
     background-color: rgb(228, 4, 4);
-    color: aliceblue;
 }
 
 #lap:hover{
     background-color: rgb(116, 5, 200);
-    color: aliceblue;
 }
 
 #reset:hover{
     background-color: rgb(222, 135, 5);
-    color: aliceblue;
 }
 
 #clear:hover{
     background-color: rgb(5, 5, 225);
-    color: aliceblue;
 }
 
 
@@ -155,4 +158,13 @@ h2{
     float: right;
     padding-top: 4px;
     padding-left: 115px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
