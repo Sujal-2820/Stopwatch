@@ -28,6 +28,7 @@ h2{
     margin-left: 300px;
     margin-right: 300px;
     border-radius: 20px;
+    border: 1px solid black;
 }
 .main-Head > h1{
     color: orangered;
@@ -42,13 +43,13 @@ h2{
     background: linear-gradient(to right, #00ff3c, #fff200);
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 
 .container .time{
     position: relative;
     width: calc(100px - 30px);
     height: calc(100px - 30px);
-    background: rgb(255, 255, 255);
     float: left;
     justify-content: center; 
     left: 469px;
@@ -58,14 +59,12 @@ h2{
     border-radius: 10px;
     text-align: center;
     padding-top: 12px;
-    border: 1px solid black;
 }
 
 .colon {
     position: relative;
     width: 30px;
     height: 70px;
-    background: rgb(255, 255, 255);
     float: left;
     left: 469px;
     top: 15px;
@@ -76,7 +75,6 @@ h2{
     padding-top: 15px;
     font-weight: bolder;
     font-size: 20px;
-    border: 1px solid black
 }
 
 
@@ -91,6 +89,7 @@ h2{
 .control-buttons{
     border: 2px solid blue;
     border-radius: 10px;
+
     transition: background-color 0.3s, color 0.3s;
     display: inline-block;
 }
@@ -99,6 +98,13 @@ h2{
     animation-name: fadeIn;
     animation-duration: 0.3s;
     color: aliceblue;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.control-buttons:hover {
+    background-color: lightblue;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 #start:hover{
