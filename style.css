@@ -161,3 +161,15 @@ h2{
     padding-top: 4px;
     padding-left: 115px;
 }
+
+.redirect{
+    text-decoration: none;
+    margin: 10px;
+    background-color: #444cf7;
+    color: white;
+    padding: 5px;
+}
+.redirect:hover{
+    background-color: black;
+    color: white;
+}
