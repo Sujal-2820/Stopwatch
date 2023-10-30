@@ -1,24 +1,27 @@
-body{
+body {
     background-color: #e5e5f7;
     opacity: 0.8;
     background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
     z-index: -1;
+    transition: 0.5s ease-in-out;
 }
 
-h1{
+h1 {
     color: darkblue;
 }
-h2{
+
+h2 {
     color: black;
 }
-.heading{
+
+.heading {
     margin-top: 50px;
     margin-left: 100px;
 }
 
 
-.main-Head{
+.main-Head {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -30,11 +33,12 @@ h2{
     border-radius: 20px;
     border: 1px solid black;
 }
-.main-Head > h1{
+
+.main-Head>h1 {
     color: orangered;
 }
 
-.container{
+.container {
     position: absolute;
     margin-top: 20px;
     margin-left: 100px;
@@ -46,12 +50,12 @@ h2{
     border-radius: 20px;
 }
 
-.container .time{
+.container .time {
     position: relative;
     width: calc(100px - 30px);
     height: calc(100px - 30px);
     float: left;
-    justify-content: center; 
+    justify-content: center;
     left: 469px;
     margin: 15px;
     box-sizing: border-box;
@@ -78,7 +82,7 @@ h2{
 }
 
 
-.controls{
+.controls {
     position: relative;
     float: left;
     left: 32%;
@@ -86,7 +90,7 @@ h2{
     bottom: 10px;
 }
 
-.control-buttons{
+.control-buttons {
     border: 2px solid blue;
     border-radius: 10px;
 
@@ -94,7 +98,7 @@ h2{
     display: inline-block;
 }
 
-.control-buttons:hover{
+.control-buttons:hover {
     animation-name: fadeIn;
     animation-duration: 0.3s;
     color: aliceblue;
@@ -107,22 +111,23 @@ h2{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-#start:hover{
+#start:hover {
     background-color: rgb(106, 4, 195);
 }
-#pause:hover{
+
+#pause:hover {
     background-color: rgb(228, 4, 4);
 }
 
-#lap:hover{
+#lap:hover {
     background-color: rgb(116, 5, 200);
 }
 
-#reset:hover{
+#reset:hover {
     background-color: rgb(222, 135, 5);
 }
 
-#clear:hover{
+#clear:hover {
     background-color: rgb(5, 5, 225);
 }
 
@@ -132,17 +137,17 @@ h2{
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
-#mainContent{
+#mainContent {
     position: absolute;
     top: 400px;
     left: 565px;
 }
 
-.LapInfo{
+.LapInfo {
     border: 1px solid black;
     padding: 10px 20px;
-    background: linear-gradient(to right, #4765e0, #d23030); 
-    font-size: 30px;  
+    background: linear-gradient(to right, #4765e0, #d23030);
+    font-size: 30px;
     display: block;
     margin-bottom: 50px;
     display: flex;
@@ -152,15 +157,16 @@ h2{
     margin-bottom: 1rem;
 }
 
-.lapNum{
+.lapNum {
     float: left;
     width: 65px;
 }
-.lap-NumVal{
+
+.lap-NumVal {
     float: left;
 }
 
-.lapTime{
+.lapTime {
     float: right;
     padding-top: 4px;
     padding-left: 115px;
@@ -170,7 +176,48 @@ h2{
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
+}
+
+/* header {
+    display: flex;
+    flex-direction: column;
+} */
+
+.mode-btn {
+    /* height: 40px; */
+    margin: 2rem;
+    padding: 1rem;
+    background: rgb(228, 49, 133);
+    color: white;
+    outline: none;
+    border: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.2s;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.75);
+    z-index: 2;
+}
+
+.mode-btn:hover {
+    background: rgb(213, 49, 126);
+}
+
+.mode-btn::before {
+    padding: 0.7rem;
+}
+
+.mode-btn::after {
+    padding: 1rem;
+}
+
+.dark-mode {
+    background-color: rgb(77, 72, 72);
+    background-image: radial-gradient(#181817 0.5px, #4b4d48 0.5px);
 }
