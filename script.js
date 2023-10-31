@@ -6,17 +6,17 @@ let Num_Of_Laps = 0;
 var lapDiv = document.querySelector("#mainContent");           //for showing laps
 
 
-document.getElementById('start').addEventListener('click', ()=>{
+document.getElementById('start').addEventListener('click', () => {
     timer = true;
-    start();  
+    start();
 });
 
 
-document.getElementById('pause').addEventListener('click', ()=>{
+document.getElementById('pause').addEventListener('click', () => {
     timer = false;
 })
 
-document.getElementById('reset').addEventListener("click", ()=>{
+document.getElementById('reset').addEventListener("click", () => {
     timer = false;
     miliSec = 0;
     sec = 0;
@@ -27,16 +27,16 @@ document.getElementById('reset').addEventListener("click", ()=>{
 })
 
 
-function start(){
-    if(timer){
+function start() {
+    if (timer) {
         miliSec++;
-        if(miliSec == 100){
+        if (miliSec == 100) {
             sec++;
             miliSec = 0;
-            if(sec == 60){
+            if (sec == 60) {
                 minute++;
                 sec = 0;
-                miliSec=0;
+                miliSec = 0;
             }
         }
 
@@ -44,26 +44,26 @@ function start(){
         displaySec = sec;
         displayMili = miliSec;
 
-        if(minute < 10){
+        if (minute < 10) {
             displayMinute = "0" + minute;
         }
-        if(sec < 10){
+        if (sec < 10) {
             displaySec = "0" + sec;
         }
-        if(miliSec < 10){
+        if (miliSec < 10) {
             displayMili = "0" + miliSec;
         }
 
         document.getElementById("minute").innerHTML = displayMinute;
         document.getElementById("sec").innerHTML = displaySec;
         document.getElementById("miliSec").innerHTML = displayMili;
-        setTimeout(start,6.5); 
+        setTimeout(start, 6.5);
 
     }
 }
 
 
-document.getElementById("lap").addEventListener("click", (e)=>{
+document.getElementById("lap").addEventListener("click", (e) => {
 
     e.preventDefault();
     const CurrTime = displayMinute + " : " + displaySec + " : " + displayMili;
@@ -98,11 +98,23 @@ document.getElementById("lap").addEventListener("click", (e)=>{
 
 
     //finally adding Lapsinfo div to lapDiv(main container)
-    
+
     lapDiv.appendChild(Lapsinfo);
 
-    document.getElementById("clear").addEventListener("click", ()=>{
+    document.getElementById("clear").addEventListener("click", () => {
         lapDiv.removeChild(Lapsinfo);
         Num_Of_Laps = 0;
     })
 })
+
+const element = document.body;
+const modeBtn = document.querySelector('.mode-btn');
+
+function changeMode() {
+    element.classList.toggle('dark-mode');
+    element.classList.contains('dark-mode') ? modeBtn.innerText = "Light Mode" : modeBtn.innerText = "Dark Mode"
+}
+
+const mode = document.querySelector('.mode-btn');
+
+mode.addEventListener('click', changeMode);
